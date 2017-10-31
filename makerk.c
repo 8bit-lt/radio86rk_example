@@ -46,37 +46,40 @@ uint16_t calcSpecialistCheckSum(uint8_t* data, uint8_t* end)
 
 int main(int argc, char** argv)
 {
+    unsigned start;
+    ssize_t body_size;
+    size_t write_size;
+    int s, d;
+    programm_t programm;
+
     if(argc != 4)
     {
         fprintf(stderr, "using: %s <load address in hex> <source file name> <dest file name>\n", argv[0]);
         return 1;
     }
 
-    unsigned start;
-    if(sscanf(argv[1], "%x%c", &start, argv[2]) != 1)
+    if(sscanf(argv[1], "%x%c", &start, argv[2]) != 1 || start > 0xFFFF)
     {
         fprintf(stderr, "incorrect address (%s)\n", argv[1]);
         return 1;
     }
 
-    int s = open(argv[2], O_RDONLY);
+    s = open(argv[2], O_RDONLY);
     if(s == -1) 
     {
         fprintf(stderr, "cannot open input file (%i)\n", errno);
         return 1;
     }
 
-    int d = creat(argv[3], 0666);
+    d = creat(argv[3], 0666);
     if(d == -1)
     {
         fprintf(stderr, "cannot create output file (%i)\n", errno);
         close(s);
         return 1;
     }
-
-    programm_t programm;
     
-    int body_size = read(s, programm.body, sizeof(programm.body));
+    body_size = read(s, programm.body, sizeof(programm.body));
     if(body_size < 0) 
     {
         fprintf(stderr, "cannot read input file (%i)\n", errno);
@@ -100,7 +103,7 @@ int main(int argc, char** argv)
     tail->magic_E6000000 = 0xE6000000;
     tail->check_sum_be = htobe16(calcSpecialistCheckSum(programm.body, programm.body + body_size));
 
-    size_t write_size = sizeof(header_t) + body_size + sizeof(footer_t);
+    write_size = sizeof(header_t) + (size_t)body_size + sizeof(footer_t);
     if(write(d, &programm, write_size) != write_size)
     {
         fprintf(stderr, "cannot write output file (%i)\n", errno);
