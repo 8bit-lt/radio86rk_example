@@ -1,0 +1,13 @@
+enter bksp . = - ins ? ?
+end      / \ H 0 F9  ? ?
+right    , V Z 9 F8  ? ?
+tab      ; D ] 8 F7  ? ?
+left     B L [ 7 F6  ? ?
+space    X O G 6 F5  ? ?
+?        T R N 5 F4  ? ?
+?        I P E 4 F3  ? ?
+down     M A K 3 F2  ? ?
+up       S W U 2 F1  ? ?
+home     ' Y C 1 F10 ? ?
+lalt     Q F J ` esc ? ?
+lshift

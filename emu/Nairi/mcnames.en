@@ -1,0 +1,86 @@
+1. ext=1
+2. ext=0
+3. sum[1-14]=CR[12-25]
+4. romadr[1-5]=CR[27-31]
+5. romadr[1-3]=CR[34-36]
+6. ramadr=CR[1-11]
+7. read A4
+8. shr enable
+9. xmit enable
+10. IO=sum[1-6]
+11. read fix
+12. write ram
+13. write A1
+14. write A2
+15. read ram
+16. read A1
+17. read A2
+18. CR=sum
+19. sum[1-7]=0, cy=0
+20. sum[8-36]=0
+21. ramadr=0
+22. halt?
+23. adr=CR[12-25]
+24. PC=PC+1
+25. CR[32]?
+26. xmit-in?
+27. repeat-op?
+28. PC[11]?
+29. esc?
+30. print?
+31.
+32.
+33.
+34.
+35.
+36.
+37-0. CR[12-25]=0
+38-0. CR[1-11]=0
+39-0. CR[5-7]=0
+40-0. CR[8-11]=0
+41-0. CR[26-36]=0
+42-0. PC=0
+43-0. IO=0
+44-0. sum[1-18]=CR[8-25]
+45-0. sum[19-36]=CR[8-25]
+46-0. add enable
+47-0. sum=sum+1
+48-0. PC=sum[1-14]
+49-0. CR[12-25]=PC
+50-0. cy=1
+51-0. write A3
+52-0. write A4
+53-0. write A5
+54-0. read A3
+55-0. shl enable
+56-0. sum[26]?
+57-0. CR[8-11]==0?
+58-0. Zcond?
+59-0. PC[7]?
+60-0. CR[30]?
+61-0. sum[36]?
+37-1. output
+38-1. CR[12-22]=CR[1-11]
+39-1. read A5
+40-1. ramadr[1-4]=CR[8-11]
+41-1. CR[12-18]=IO, CR[23]=1
+42-1. sum[8]=sum[7]
+43-1. printer-status?
+44-1. printer-status=0
+45-1. romadr[1-3]=sum[34-36]
+46-1. add enable
+47-1. flag-pa=1
+48-1. PC[1-6]=CR[27-32],PC[9]=1,PC[13]=1
+49-1. sum[35-36]=0
+50-1. flag-pa=0
+51-1. halt
+52-1. ramadr[1]=1
+53-1. ramadr[2]=1
+54-1. ramadr[3]=1
+55-1. or enable
+56-1. sum[8-12]==0?
+57-1. sum[35]!=sum[36]?
+58-1. romadr[1-2]={sum[1],cy}
+59-1. sum=0?
+60-1. CR[33]?
+61-1. romadr=ramadr

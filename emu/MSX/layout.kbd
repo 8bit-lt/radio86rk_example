@@ -1,0 +1,10 @@
+0 1 2 3 4 5 6 7
+8 9 - = \ [ ] ;
+' ` , . / <> A B
+C D E F G H I J
+K L M N O P Q R
+S T U V W X Y Z
+lshift|rshift lctrl F10 caps rctrl F1 F2 F3
+F4 F5 esc tab F12 bksp F11 enter
+space x-home x-ins x-del left|x-left up|x-up down|x-down right|x-right
+

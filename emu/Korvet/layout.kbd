@@ -1,0 +1,11 @@
+; A B C D E F G
+H I J K L M N O
+P Q R S T U V W
+X Y Z [ \ ] ' F6
+0 1 2 3 4 5 6 7
+8 9 = ` , - . /
+enter gray- F12 gray* gray/ bksp tab space
+lshift F11 ctxmenu esc rctrl lctrl lalt rshift 
+ins end down pgdn left center right home 
+up pgup ? ? ? ? del ?
+F1 F2 F3 F4 F5 ? ? ?

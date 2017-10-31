@@ -1,0 +1,12 @@
+? F10 ? ? lshift home up pgup
+esc tab lctrl <> rctrl ins del gray+
+1 Q A Z rshift end down pgdn
+F1 2 W S X left center right
+F2 3 E D C num F8 F9
+F3 4 R F V bksp F7 F6
+5 T G B space x-right enter x-ins
+F4 6 Y H N x-down x-up \
+F5 7 U J M ` ] =
+8 I K , x-left ' [ -
+9 O L . / ; P 0
+F11

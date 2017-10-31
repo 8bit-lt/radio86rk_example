@@ -1,0 +1,11 @@
+x-up x-right x-down pgup right pgdn x-enter del
+x-left lalt home up center end down ins
+x-del [ enter ] left lshift \ lctrl
+= - ` P ' ; / .
+0 9 O I L K M ,
+8 7 U Y H J N space
+6 5 R T G F B V
+4 3 E W S D C X
+1 2 esc Q tab A caps Z
+? ? ? ? ? ? ? bksp
+F1 F2 F3 F4 F5 x-home x-ins x-end

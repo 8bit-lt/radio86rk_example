@@ -1,0 +1,13 @@
+` 1 2 3 4 5 6 7
+8 9 0 - ? home up pgup
+J C U K E N G [
+] Z H = ? left center right
+F Y W A P R O L
+D V \ . bksp end down pgdn
+Q ' S M I T X B
+; , / <> space ins ? del
+ralt tab F1 F2 F3 F11 x-up F12
+x-enter enter F4 F5 F6 x-left x-home x-right
+? ? F7 F8 F9 x-del x-down x-ins
+lalt rctrl ? ? ? x-pgdn x-end x-pgup
+lshift rshift lctrl ? ? gray/ gray* gray-

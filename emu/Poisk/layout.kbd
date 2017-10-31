@@ -1,0 +1,17 @@
+] center ? ; gray+ enter up down
+= left ins F6 \ bksp home end
+F pgup pgdn N D S Z ?
+F2 ? ? F5 F1 esc ` break
+E ? caps H W Q A F12
+rshift rctrl lctrl C X ralt lalt lshift
+? num del ? gray- F9 scroll right
+3 gray* tab Y 2 F10 1 F12
+0 O - ' ? ? ? ?
+8 9 P [ ? ? ? ?
+M K B G ? ? ? ?
+6 7 F4 F3 ? ? ? ?
+J I T R ? ? ? ?
+. , V space ? ? ? ?
+L F7 / F8 ? ? ? ?
+? U 5 4 ? ? ? ?
+

@@ -1,0 +1,9 @@
+space     x-up|center 0 8 ; H P X
+esc     x-down|ins    1 9 A I Q Y
+tab     x-home|home   2 = B J R Z
+rctrl         F1|up   3 ` C K S [
+enter         F2|pgup 4 , D L T \
+del           F3|end  5 - E M U ]
+x-left|left   F4|down 6 . F N V '
+x-right|right F5|pgdn 7 / G O W bksp
+rshift lctrl lshift

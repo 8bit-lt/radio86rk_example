@@ -1,0 +1,12 @@
+gray* gray- ? ? ? home up pgup
+esc tab ? F6 F7 ins del x-enter
+` J F Q F8 end down pgdn
+F1 1 C Y ^ left center right
+F2 2 U W S gray+ F11 F12
+F3 3 K A M bksp F9 F10
+4 E P I space x-right enter /
+F4 5 N R T x-down x-up -
+F5 6 G O X . ; =
+7 [ L B x-left \ H 0
+8 ] D @ , V Z 9
+lctrl lshift x-pgup

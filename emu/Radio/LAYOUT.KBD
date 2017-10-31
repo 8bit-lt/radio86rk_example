@@ -1,0 +1,10 @@
+x-home|home x-pgup|pgup esc F1|up F2|end F3|down F4|pgdn F5
+tab rctrl enter bksp x-left|left x-up|center x-right|right x-down|ins
+0 1 2 3 4 5 6 7
+8 9 = ` , - . /
+; A B C D E F G
+H I J K L M N O
+P Q R S T U V W
+X Y Z [ \ ] ' space
+lshift lctrl rshift ? ? ? ? ?
+center left right up down

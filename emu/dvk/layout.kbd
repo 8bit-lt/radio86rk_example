@@ -1,0 +1,16 @@
+F1 F2 F3 F4 F5 F6 F7 F8
+F9 F10 esc ? rctrl ? F11 F12
+? ? ? ? x-home x-ins x-del x-end
+x-pgup x-pgdn ins del x-enter end down pgdn
+left center right ? home up pgup gray+
+num gray/ gray* gray- x-left x-right x-down x-up
+? ? ? ? ? ? lshift lctrl
+caps lalt rshift ? bksp enter tab `
+1 J F Q ^ 2 C Y
+' ? / 3 U W S ?
+4 K A M space ? 5 E
+P I ? 6 N R T ?
+7 G O X ? 8 [ L
+B ? 9 ] D ; ? 0
+Z _ V , ? } H .
+? - = \ { ~ ? ?
